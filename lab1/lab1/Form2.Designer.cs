@@ -64,9 +64,10 @@ namespace lab1
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(649, 438);
+            this.pictureBox1.Size = new System.Drawing.Size(645, 429);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.paint);
@@ -76,11 +77,11 @@ namespace lab1
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(663, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1248, 20);
+            this.label1.Size = new System.Drawing.Size(163, 200);
             this.label1.TabIndex = 4;
-            this.label1.Text = "В первую ячейку необходимо ввести угол отклонения центра круга от точки, координа" +
-    "ты которой необходимо ввести во вторую и третью ячейки, после чего нажать на кно" +
-    "пку.";
+            this.label1.Text = "В первую ячейку \r\nнеобходимо ввести \r\nугол отклонения \r\nцентра круга от \r\nточки, " +
+    "координаты \r\nкоторой необходимо \r\nввести во вторую \r\nи третью ячейки, \r\nпосле че" +
+    "го нажать \r\nна кнопку.";
             // 
             // textBox3
             // 
@@ -93,7 +94,7 @@ namespace lab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(830, 450);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);

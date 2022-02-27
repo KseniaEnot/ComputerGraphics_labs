@@ -14,7 +14,7 @@ namespace lab1
     {
         static int size = 100;
         static Size diameter = new Size(size * 2, size * 2);
-        Pen pen = new Pen(Color.Magenta, 10);
+        Pen pen = new Pen(Color.Magenta, 5);
         Color background = Color.AntiqueWhite;
         bool f = false;
         static Point point = new Point(0, 0);
@@ -87,6 +87,7 @@ namespace lab1
                 String y = textBox1.Text;
                 String a = textBox3.Text;
                 int ix, iy; double ia;
+                e.Graphics.DrawEllipse(new Pen(Color.Red, 5), rect);
                 if (int.TryParse(x, out ix) && int.TryParse(y, out iy) && double.TryParse(a, out ia))
                 {
                     Point point1 = new Point(Convert.ToInt32(x), Convert.ToInt32(y));
