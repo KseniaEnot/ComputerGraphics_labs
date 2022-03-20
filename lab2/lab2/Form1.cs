@@ -13,6 +13,7 @@ namespace lab2
     public partial class Form1 : Form
     {
         Pen pen = new Pen(Color.Magenta, 3);
+        Pen pen2 = new Pen(Color.BlanchedAlmond, 5);
 
         public Form1()
         {
@@ -21,19 +22,26 @@ namespace lab2
 
         private void paint(object sender, PaintEventArgs e)
         {
+            Graphics g = pictureBox1.CreateGraphics();
+            g.Clear(BackColor);
             List<PointF> input_points = new List<PointF>(); // введённые точки
             input_points.Add(new PointF((float)x1.Value, (float)y1.Value));
             input_points.Add(new PointF((float)x2.Value, (float)y2.Value));
             input_points.Add(new PointF((float)x3.Value, (float)y3.Value));
             input_points.Add(new PointF((float)x4.Value, (float)y4.Value));
 
+            g.DrawLine(pen, input_points[0], input_points[1]);
 
+            /*for(int i = 0; i<3; i++)
+            {
+                g.DrawLine(pen, input_points[i], input_points[i + 1]);
+            }*/
+            //g.DrawBezier(pen2, input_points[0], input_points[1], input_points[2], input_points[3]);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Graphics g = pictureBox1.CreateGraphics();
-            g.Clear(BackColor);
             pictureBox1.Refresh();
         }
 

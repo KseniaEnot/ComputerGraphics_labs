@@ -58,6 +58,11 @@ namespace lab2
             // x1
             // 
             this.x1.Location = new System.Drawing.Point(628, 33);
+            this.x1.Maximum = new decimal(new int[] {
+            610,
+            0,
+            0,
+            0});
             this.x1.Name = "x1";
             this.x1.Size = new System.Drawing.Size(77, 22);
             this.x1.TabIndex = 0;
@@ -65,6 +70,11 @@ namespace lab2
             // y1
             // 
             this.y1.Location = new System.Drawing.Point(711, 33);
+            this.y1.Maximum = new decimal(new int[] {
+            410,
+            0,
+            0,
+            0});
             this.y1.Name = "y1";
             this.y1.Size = new System.Drawing.Size(77, 22);
             this.y1.TabIndex = 1;
@@ -72,6 +82,11 @@ namespace lab2
             // y2
             // 
             this.y2.Location = new System.Drawing.Point(711, 61);
+            this.y2.Maximum = new decimal(new int[] {
+            410,
+            0,
+            0,
+            0});
             this.y2.Name = "y2";
             this.y2.Size = new System.Drawing.Size(77, 22);
             this.y2.TabIndex = 3;
@@ -79,6 +94,11 @@ namespace lab2
             // x2
             // 
             this.x2.Location = new System.Drawing.Point(628, 61);
+            this.x2.Maximum = new decimal(new int[] {
+            610,
+            0,
+            0,
+            0});
             this.x2.Name = "x2";
             this.x2.Size = new System.Drawing.Size(77, 22);
             this.x2.TabIndex = 2;
@@ -86,6 +106,11 @@ namespace lab2
             // y4
             // 
             this.y4.Location = new System.Drawing.Point(711, 117);
+            this.y4.Maximum = new decimal(new int[] {
+            410,
+            0,
+            0,
+            0});
             this.y4.Name = "y4";
             this.y4.Size = new System.Drawing.Size(77, 22);
             this.y4.TabIndex = 7;
@@ -93,6 +118,11 @@ namespace lab2
             // x4
             // 
             this.x4.Location = new System.Drawing.Point(628, 117);
+            this.x4.Maximum = new decimal(new int[] {
+            610,
+            0,
+            0,
+            0});
             this.x4.Name = "x4";
             this.x4.Size = new System.Drawing.Size(77, 22);
             this.x4.TabIndex = 6;
@@ -100,6 +130,11 @@ namespace lab2
             // y3
             // 
             this.y3.Location = new System.Drawing.Point(711, 89);
+            this.y3.Maximum = new decimal(new int[] {
+            410,
+            0,
+            0,
+            0});
             this.y3.Name = "y3";
             this.y3.Size = new System.Drawing.Size(77, 22);
             this.y3.TabIndex = 5;
@@ -107,6 +142,11 @@ namespace lab2
             // x3
             // 
             this.x3.Location = new System.Drawing.Point(628, 89);
+            this.x3.Maximum = new decimal(new int[] {
+            610,
+            0,
+            0,
+            0});
             this.x3.Name = "x3";
             this.x3.Size = new System.Drawing.Size(77, 22);
             this.x3.TabIndex = 4;
@@ -122,9 +162,10 @@ namespace lab2
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Location = new System.Drawing.Point(9, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(609, 431);
+            this.pictureBox1.Size = new System.Drawing.Size(610, 410);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.paint);
@@ -141,9 +182,24 @@ namespace lab2
             // power
             // 
             this.power.Location = new System.Drawing.Point(677, 162);
+            this.power.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.power.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.power.Name = "power";
             this.power.Size = new System.Drawing.Size(77, 22);
             this.power.TabIndex = 11;
+            this.power.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // button1
             // 
